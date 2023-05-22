@@ -1,0 +1,13 @@
+<div th:fragment="header">
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal" th:text="${content}"/>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="/" th:text="${navbarBook}"/>
+      <a class="p-2 text-dark" href="/add" th:text="${navbarAddBook}"/>
+      <a class="p-2 text-dark" href="/search" th:text="${navbarSearchBook}"/>
+      <a class="p-2 text-dark" href="/count" th:text="${navbarCountBooks}"/>
+      <a class="p-2 text-dark" href="/chart" th:text="${navbarHist}"/>
+      <a class="p-2 text-dark" href="/settings" th:text="${navbarSettings}"/>
+    </nav>
+  </div>
+</div>
